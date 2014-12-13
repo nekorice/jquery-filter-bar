@@ -1,0 +1,133 @@
+ul {
+  margin:0px;
+  padding:0px;
+}
+
+
+::selection {
+    background:#ea4c89; 
+    color:#FFF;
+}
+
+::-moz-selection {
+    background:#ea4c89; 
+    color:#FFF;
+}
+
+::-webkit-selection {
+    background:#ea4c89; 
+    color:#FFF;
+}
+
+.mirror {
+transform: rotateY(180deg);
+-webkit-transform: rotateY(180deg);
+-moz-transform: rotateY(180deg);  
+-ms-transform: rotateY(180deg);
+-o-transform: rotateY(180deg);  
+}
+
+
+body {
+  font-family: "Noto-sans","SimSun";
+}
+
+
+h1,h2,h3,h4,h5 {
+  color: #ea4c89;
+  font-weight: bolder;
+  font-family: "Noto-sans","Microsoft YaHei","SimSun",sans-serif;
+}
+
+div.bs-callout-red {
+  border-left-color: #ea4c89;
+}
+
+
+
+nav.navbar { margin-bottom: 0;}
+
+a { outline:none; }
+a:focus {
+outline: none;
+}
+
+
+a {
+  display: inline-block;
+  cursor:pointer;
+}
+
+.clear {
+    clear:both;
+}
+
+
+.bs-callout {
+  padding: 20px;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+
+
+img.phone_image {
+  max-width:100%;
+  max-height:100%;
+}
+
+
+div.phone_list .phone_cell {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #DEDEDE;
+    width: 100%;
+    height: 275px;
+    position:relative;
+}
+
+a.connect_phone {
+  /*margin:0 auto;*/
+  float:left;
+  margin-top:10px;
+  width:39%;
+  height:175px;
+}
+
+.phone_text {
+  font-family:"幼圆";
+  float:left;
+  margin-left:20px;
+  margin-top:10px;
+  width:49%;
+}
+
+.phone_text .first {
+  font-size:1.2em;
+  font-weight:bolder;
+}
+
+.phone_text .second {
+  color:#777;
+}
+
+.phone_text .first::first-letter {
+  font-size:1.5em;
+}
+
+
+button.connect_phone{
+  width:50%;
+  margin-left:15%;
+  bottom:25px;
+  position:absolute;
+}
+
+
+
+
+
+
+

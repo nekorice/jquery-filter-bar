@@ -1,0 +1,618 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>设备选择</title>
+<meta charset="utf-8" />
+
+<!-- 这里放一些公用的css和js的引用 在header标签里面引用这个文件-->
+
+<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet"></link>
+<link href="demo.css" rel="stylesheet"></link>
+<link href="jquery.filter.css" rel="stylesheet"></link>
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+
+
+<!--[if lt IE 9]>
+<script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script type="text/javascript"> 
+$(function(){
+  $(".phone_list").filter_bar({
+    parent:'#sift',
+    cell:'.phone',
+    fdisplay:{
+      'memory':'内存',
+      'system':'系统',
+      'resolution':'分辨率'
+    },
+    fformat:{
+      'memory':"{0} M",
+      'system':"Android {0}"
+      
+    }
+  })
+
+});
+</script>
+
+
+<style type="text/css">
+
+div.phone_cell:hover {
+  outline:#CCC solid;
+}
+
+
+a {
+  display: inline-block;
+  cursor:pointer;
+}
+
+
+.bs-callout {
+  padding: 20px;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+
+
+span.big-font {
+  font-size:100px;
+  color:#373737;
+}
+
+div.phone_list .phone_cell {
+  display:inline-block;
+  margin-top:20px;
+  margin-bottom:20px;
+  padding:20px;
+  border:1px solid #DEDEDE;
+  width:100%;
+  height:275px;
+}
+
+div.area {
+    margin-top:20px;
+}
+
+</style>
+
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/cloud/home" style="font-weight:bolder;color:#FFF;">demo</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/" >device select</a></li>
+        <li><a href="/" >app</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li ><a href="/" ></a></li>
+        <li ><a href="/" ></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="container-fluid" style="max-width:1300px;">
+  <div class="row sift-area">
+    <div id="sift" class="col-sm-12 bs-callout bs-callout-red">
+    </div>
+  </div>
+  
+   <div class="row area">
+    <div class="col-sm-12 bs-callout bs-callout-red">
+        <!--div class="right-inner-addon">
+            <span class="glyphicon glyphicon-search"></span>
+            <input type="search"
+                   class="form-control search" 
+                   placeholder="Search devices" />
+        </div-->    
+        <div class="row phone_list">
+           
+           <div class="col-sm-4 col-md-3 phone"  data-system="4.2.2" data-resolution="1920X1080" data-memory="2048">
+              <div class="phone_cell cell_1" data-phone="1">
+                
+                
+                <a class="connect_phone"  data-phone="1" ><img class="phone_image" src="cellphone-icon.png" alt="iphone-5s"/></a>
+                  
+                       
+                <div class="phone_text">
+                  <p class="first">SamSung Galaxy S4 I9500</p>
+                  <p class="second">Android 4.2.2</p>
+                  <p class="second">1920X1080</p>
+                </div>
+                <div class="clear"></div>
+                
+                 
+                <button type="button" class="btn btn-info connect_phone" data-phone="1" id="bt_phone_1" data-select-text="">select</button> 
+                  
+                
+                <div class="clear"></div>
+             </div>
+           </div>
+           
+           <div class="col-sm-4 col-md-3 phone"  data-system="4.4.4" data-resolution="1280X720" data-memory="1024">
+              <div class="phone_cell cell_2" data-phone="2">
+                
+                
+                <a class="connect_phone"  data-phone="2" ><img class="phone_image" src="cellphone-icon.png" alt="iphone-5s"/></a>
+                  
+                       
+                <div class="phone_text">
+                  <p class="first">HTC G23 One X  S720e</p>
+                  <p class="second">Android 4.4.4</p>
+                  <p class="second">1280X720</p>
+                </div>
+                <div class="clear"></div>
+                
+                 
+                <button type="button" class="btn btn-info connect_phone" data-phone="2" id="bt_phone_2" data-select-text="">select</button> 
+                  
+                
+                <div class="clear"></div>
+             </div>
+           </div>
+           
+           <div class="col-sm-4 col-md-3 phone"  data-system="4.1.2" data-resolution="1280X720" data-memory="2048">
+              <div class="phone_cell cell_3" data-phone="3">
+                
+                
+                <a class="connect_phone"  data-phone="3" ><img class="phone_image" src="cellphone-icon.png" alt="iphone-5s"/></a>
+                  
+                       
+                <div class="phone_text">
+                  <p class="first">SamSung Galaxy Note 2 N7100</p>
+                  <p class="second">Android 4.1.2</p>
+                  <p class="second">1280X720</p>
+                </div>
+                <div class="clear"></div>
+                
+                 
+                <button type="button" class="btn btn-info connect_phone" data-phone="3" id="bt_phone_3" data-select-text="">select</button> 
+                  
+                
+                <div class="clear"></div>
+             </div>
+           </div>
+           
+           <div class="col-sm-4 col-md-3 phone"  data-system="4.1.2" data-resolution="1024X600" data-memory="1024">
+              <div class="phone_cell cell_4" data-phone="4">
+                
+                
+                <a class="connect_phone"  data-phone="4" ><img class="phone_image" src="cellphone-icon.png" alt="iphone-5s"/></a>
+                  
+                       
+                <div class="phone_text">
+                  <p class="first">SamSung SM-T210</p>
+                  <p class="second">Android 4.1.2</p>
+                  <p class="second">1024X600</p>
+                </div>
+                <div class="clear"></div>
+                
+                 
+                <button type="button" class="btn btn-info connect_phone" data-phone="4" id="bt_phone_4" data-select-text="">select</button> 
+                  
+                
+                <div class="clear"></div>
+             </div>
+           </div>
+           
+           <div class="col-sm-4 col-md-3 phone"  data-system="4.2.2" data-resolution="800X480" data-memory="768">
+              <div class="phone_cell cell_5" data-phone="5">
+                
+                
+                <a class="connect_phone"  data-phone="5" ><img class="phone_image" src="cellphone-icon.png" alt="iphone-5s"/></a>
+                  
+                       
+                <div class="phone_text">
+                  <p class="first">SamSung S7562</p>
+                  <p class="second">Android 4.2.2</p>
+                  <p class="second">800X480</p>
+                </div>
+                <div class="clear"></div>
+                
+                 
+                <button type="button" class="btn btn-info connect_phone" data-phone="5" id="bt_phone_5" data-select-text="">select</button> 
+                  
+                
+                <div class="clear"></div>
+             </div>
+           </div>
+           
+           <div class="col-sm-4 col-md-3 phone"  data-system="4.2" data-resolution="1280X720" data-memory="1024">
+              <div class="phone_cell cell_6" data-phone="6">
+                
+                
+                <a class="connect_phone"  data-phone="6" ><img class="phone_image" src="cellphone-icon.png" alt="iphone-5s"/></a>
+                  
+                       
+                <div class="phone_text">
+                  <p class="first">Lenovo S920</p>
+                  <p class="second">Android 4.2</p>
+                  <p class="second">1280X720</p>
+                </div>
+                <div class="clear"></div>
+                
+                 
+                <button type="button" class="btn btn-info connect_phone" data-phone="6" id="bt_phone_6" data-select-text="">select</button> 
+                  
+                
+                <div class="clear"></div>
+             </div>
+           </div>
+           
+           <div class="col-sm-4 col-md-3 phone"  data-system="4.1" data-resolution="1920X1080" data-memory="2048">
+              <div class="phone_cell cell_7" data-phone="7">
+                
+                
+                <a class="connect_phone"  data-phone="7" ><img class="phone_image" src="cellphone-icon.png" alt="iphone-5s"/></a>
+                  
+                       
+                <div class="phone_text">
+                  <p class="first">中兴 Grand S  V988</p>
+                  <p class="second">Android 4.1</p>
+                  <p class="second">1920X1080</p>
+                </div>
+                <div class="clear"></div>
+                
+                 
+                <button type="button" class="btn btn-info connect_phone" data-phone="7" id="bt_phone_7" data-select-text="">select</button> 
+                  
+                
+                <div class="clear"></div>
+             </div>
+           </div>
+           
+           <div class="col-sm-4 col-md-3 phone"  data-system="4.1.2" data-resolution="1280X720" data-memory="2048">
+              <div class="phone_cell cell_9" data-phone="9">
+                
+                
+                <a class="connect_phone"  data-phone="9" ><img class="phone_image" src="cellphone-icon.png" alt="iphone-5s"/></a>
+                  
+                       
+                <div class="phone_text">
+                  <p class="first">华为 Mate</p>
+                  <p class="second">Android 4.1.2</p>
+                  <p class="second">1280X720</p>
+                </div>
+                <div class="clear"></div>
+                
+                 
+                <button type="button" class="btn btn-info connect_phone" data-phone="9" id="bt_phone_9" data-select-text="">select</button> 
+                  
+                
+                <div class="clear"></div>
+             </div>
+           </div>
+           
+           <div class="col-sm-4 col-md-3 phone"  data-system="4.1.1" data-resolution="854X480" data-memory="512">
+              <div class="phone_cell cell_10" data-phone="10">
+                
+                
+                <a class="connect_phone"  data-phone="10" ><img class="phone_image" src="cellphone-icon.png" alt="iphone-5s"/></a>
+                  
+                       
+                <div class="phone_text">
+                  <p class="first">华为 C8813</p>
+                  <p class="second">Android 4.1.1</p>
+                  <p class="second">854X480</p>
+                </div>
+                <div class="clear"></div>
+                
+                 
+                <button type="button" class="btn btn-info connect_phone" data-phone="10" id="bt_phone_10" data-select-text="">select</button> 
+                  
+                
+                <div class="clear"></div>
+             </div>
+           </div>
+           
+           <div class="col-sm-4 col-md-3 phone"  data-system="4.1.1" data-resolution="1280X720" data-memory="2048">
+              <div class="phone_cell cell_18" data-phone="18">
+                
+                
+                <a class="connect_phone"  data-phone="18" ><img class="phone_image" src="cellphone-icon.png" alt="iphone-5s"/></a>
+                  
+                       
+                <div class="phone_text">
+                  <p class="first">小米 2S</p>
+                  <p class="second">Android 4.1.1</p>
+                  <p class="second">1280X720</p>
+                </div>
+                <div class="clear"></div>
+                
+                 
+                <button type="button" class="btn btn-info connect_phone" data-phone="18" id="bt_phone_18" data-select-text="">select</button> 
+                  
+                
+                <div class="clear"></div>
+             </div>
+           </div>
+           
+           <div class="col-sm-4 col-md-3 phone"  data-system="4.2.2" data-resolution="1280X720" data-memory="2048">
+              <div class="phone_cell cell_36" data-phone="36">
+                
+                
+                <a class="connect_phone"  data-phone="36" ><img class="phone_image" src="cellphone-icon.png" alt="iphone-5s"/></a>
+                  
+                       
+                <div class="phone_text">
+                  <p class="first">华为 Ascend P6</p>
+                  <p class="second">Android 4.2.2</p>
+                  <p class="second">1280X720</p>
+                </div>
+                <div class="clear"></div>
+                
+                 
+                <button type="button" class="btn btn-info connect_phone" data-phone="36" id="bt_phone_36" data-select-text="">select</button> 
+                  
+                
+                <div class="clear"></div>
+             </div>
+           </div>
+           
+           <div class="col-sm-4 col-md-3 phone"  data-system="4.4.2" data-resolution="1920X1080" data-memory="3072">
+              <div class="phone_cell cell_37" data-phone="37">
+                
+                
+                <a class="connect_phone"  data-phone="37" ><img class="phone_image" src="cellphone-icon.png" alt="iphone-5s"/></a>
+                  
+                       
+                <div class="phone_text">
+                  <p class="first">SamSung Galaxy Note3 N9006</p>
+                  <p class="second">Android 4.4.2</p>
+                  <p class="second">1920X1080</p>
+                </div>
+                <div class="clear"></div>
+                
+                 
+                <button type="button" class="btn btn-info connect_phone" data-phone="37" id="bt_phone_37" data-select-text="">select</button> 
+                  
+                
+                <div class="clear"></div>
+             </div>
+           </div>
+           
+           <div class="col-sm-4 col-md-3 phone"  data-system="4.2.1" data-resolution="1920X1080" data-memory="2048">
+              <div class="phone_cell cell_40" data-phone="40">
+                
+                
+                <a class="connect_phone"  data-phone="40" ><img class="phone_image" src="cellphone-icon.png" alt="iphone-5s"/></a>
+                  
+                       
+                <div class="phone_text">
+                  <p class="first">小米3 移动版</p>
+                  <p class="second">4.2.1 JOP40D</p>
+                  <p class="second">1920X1080</p>
+                </div>
+                <div class="clear"></div>
+                
+                 
+                <button type="button" class="btn btn-info connect_phone" data-phone="40" id="bt_phone_40" data-select-text="">select</button> 
+                  
+                
+                <div class="clear"></div>
+             </div>
+           </div>
+           
+           <div class="col-sm-4 col-md-3 phone"  data-system="4.1.2" data-resolution="1280X720" data-memory="1024">
+              <div class="phone_cell cell_41" data-phone="41">
+                
+                
+                <a class="connect_phone"  data-phone="41" ><img class="phone_image" src="cellphone-icon.png" alt="iphone-5s"/></a>
+                  
+                       
+                <div class="phone_text">
+                  <p class="first">SamSung GT-I9300(S3)</p>
+                  <p class="second">Android 4.1.2</p>
+                  <p class="second">1280X720</p>
+                </div>
+                <div class="clear"></div>
+                
+                 
+                <button type="button" class="btn btn-info connect_phone" data-phone="41" id="bt_phone_41" data-select-text="">select</button> 
+                  
+                
+                <div class="clear"></div>
+             </div>
+           </div>
+           
+           <div class="col-sm-4 col-md-3 phone"  data-system="4.1.1" data-resolution="1024X600" data-memory="1024">
+              <div class="phone_cell cell_42" data-phone="42">
+                
+                
+                <a class="connect_phone"  data-phone="42" ><img class="phone_image" src="cellphone-icon.png" alt="iphone-5s"/></a>
+                  
+                       
+                <div class="phone_text">
+                  <p class="first">SamSung GT-P3110 (Tab 2)</p>
+                  <p class="second">Android 4.1.1</p>
+                  <p class="second">1024X600</p>
+                </div>
+                <div class="clear"></div>
+                
+                 
+                <button type="button" class="btn btn-info connect_phone" data-phone="42" id="bt_phone_42" data-select-text="">select</button> 
+                  
+                
+                <div class="clear"></div>
+             </div>
+           </div>
+           
+           <div class="col-sm-4 col-md-3 phone"  data-system="4.2.1" data-resolution="960X540" data-memory="1024">
+              <div class="phone_cell cell_43" data-phone="43">
+                
+                
+                <a class="connect_phone"  data-phone="43" ><img class="phone_image" src="cellphone-icon.png" alt="iphone-5s"/></a>
+                  
+                       
+                <div class="phone_text">
+                  <p class="first">酷派 8198T</p>
+                  <p class="second">Android 4.2.1</p>
+                  <p class="second">960X540</p>
+                </div>
+                <div class="clear"></div>
+                
+                 
+                <button type="button" class="btn btn-info connect_phone" data-phone="43" id="bt_phone_43" data-select-text="">select</button> 
+                  
+                
+                <div class="clear"></div>
+             </div>
+           </div>
+           
+           <div class="col-sm-4 col-md-3 phone"  data-system="4.2.2" data-resolution="1920X1080" data-memory="2048">
+              <div class="phone_cell cell_48" data-phone="48">
+                
+                
+                <a class="connect_phone"  data-phone="48" ><img class="phone_image" src="cellphone-icon.png" alt="iphone-5s"/></a>
+                  
+                       
+                <div class="phone_text">
+                  <p class="first">Lenovo K910</p>
+                  <p class="second">Android 4.2.2</p>
+                  <p class="second">1920X1080</p>
+                </div>
+                <div class="clear"></div>
+                
+                 
+                <button type="button" class="btn btn-info connect_phone" data-phone="48" id="bt_phone_48" data-select-text="">select</button> 
+                  
+                
+                <div class="clear"></div>
+             </div>
+           </div>
+           
+           <div class="col-sm-4 col-md-3 phone"  data-system="4.1.2" data-resolution="1280X720" data-memory="1024">
+              <div class="phone_cell cell_54" data-phone="54">
+                
+                
+                <a class="connect_phone"  data-phone="54" ><img class="phone_image" src="cellphone-icon.png" alt="iphone-5s"/></a>
+                  
+                       
+                <div class="phone_text">
+                  <p class="first">Sony M35c</p>
+                  <p class="second">Android 4.1.2</p>
+                  <p class="second">1280X720</p>
+                </div>
+                <div class="clear"></div>
+                
+                 
+                <button type="button" class="btn btn-info connect_phone" data-phone="54" id="bt_phone_54" data-select-text="">select</button> 
+                  
+                
+                <div class="clear"></div>
+             </div>
+           </div>
+           
+           <div class="col-sm-4 col-md-3 phone"  data-system="4.2.2" data-resolution="1280X720" data-memory="2048">
+              <div class="phone_cell cell_56" data-phone="56">
+                
+                
+                <a class="connect_phone"  data-phone="56" ><img class="phone_image" src="cellphone-icon.png" alt="iphone-5s"/></a>
+                  
+                       
+                <div class="phone_text">
+                  <p class="first">Z5S mini</p>
+                  <p class="second">Android 4.2.2</p>
+                  <p class="second">1280X720</p>
+                </div>
+                <div class="clear"></div>
+                
+                 
+                <button type="button" class="btn btn-info connect_phone" data-phone="56" id="bt_phone_56" data-select-text="">select</button> 
+                  
+                
+                <div class="clear"></div>
+             </div>
+           </div>
+           
+           <div class="col-sm-4 col-md-3 phone"  data-system="4.2.1" data-resolution="854X480" data-memory="512">
+              <div class="phone_cell cell_64" data-phone="64">
+                
+                
+                <a class="connect_phone"  data-phone="64" ><img class="phone_image" src="cellphone-icon.png" alt="iphone-5s"/></a>
+                  
+                       
+                <div class="phone_text">
+                  <p class="first">8295M</p>
+                  <p class="second">Andriod 4.2.1</p>
+                  <p class="second">854X480</p>
+                </div>
+                <div class="clear"></div>
+                
+                 
+                <button type="button" class="btn btn-info connect_phone" data-phone="64" id="bt_phone_64" data-select-text="">select</button> 
+                  
+                
+                <div class="clear"></div>
+             </div>
+           </div>
+           
+           <div class="col-sm-4 col-md-3 phone"  data-system="4.4.2" data-resolution="2560X1440" data-memory="3072">
+              <div class="phone_cell cell_79" data-phone="79">
+                
+                
+                <a class="connect_phone"  data-phone="79" ><img class="phone_image" src="cellphone-icon.png" alt="iphone-5s"/></a>
+                  
+                       
+                <div class="phone_text">
+                  <p class="first">LG G3 4G</p>
+                  <p class="second">Android 4.4.2</p>
+                  <p class="second">2560X1440</p>
+                </div>
+                <div class="clear"></div>
+                
+                 
+                <button type="button" class="btn btn-info connect_phone" data-phone="79" id="bt_phone_79" data-select-text="">select</button> 
+                  
+                
+                <div class="clear"></div>
+             </div>
+           </div>
+           
+             
+           </div>
+           
+        </div>
+        
+        
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+<div style="height:200px;">
+  
+</div>
+
+<script src="jquery.filter.js"></script>    
+
+
+<body>
+</html>
