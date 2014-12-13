@@ -1,0 +1,85 @@
+/* phone select */
+
+._filter-row:after {
+  content:'';
+  display:block;
+  clear:both;
+}
+
+label._filter_title {
+  padding-top:10px;
+}
+
+a._filter {
+  width:110px;
+}
+
+ul._filter-ul {
+  /*font-size:0.9em;*/
+}
+
+.bs-callout {
+  padding: 20px;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+
+input._filter-search {
+  width:100%;
+}
+
+.right-inner-addon {
+    position: relative;
+}
+.right-inner-addon input {
+    padding-right: 30px;    
+}
+.right-inner-addon span {
+    position: absolute;
+    right: 0px;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+
+._filter-title {
+  width:10%;
+  float:left;
+}
+
+._filter-bar {
+  width:89%;
+  float:left;
+}
+
+ul._filter-ul-tag {
+  list-style-image:none;
+  list-style-type:none;
+}
+
+ul._filter-ul-tag li {
+  margin-top:5px;
+  margin-right:5px;
+  display:block;
+}
+
+ul._filter-ul-tag li a {
+  text-decoration:none;
+  color:#ea4c89;
+  padding:3px;
+  border-radius:0;
+}
+
+ul._filter-ul-tag li a:hover {
+  text-decoration:none;
+  color:#ea4c89;
+  background:#fad4e3;
+}
+
+._filter_tag {
+  border:1px solid #ea4c89;
+  color:#ea4c89;
+}
+
+
+
